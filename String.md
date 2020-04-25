@@ -14,3 +14,4 @@ The following contains all the solutions for the problems marked as `String` und
 
 `LC 68`. **Text Justification** - [Problem](https://leetcode.com/problems/text-justification/) [Solution](https://leetcode.com/problems/text-justification/discuss/595979/C%2B%2B-solution-easy-to-understand)
 
+`LC 71.` **Simplify Path** - [Problem](https://leetcode.com/problems/simplify-path/) [Solution](https://leetcode.com/problems/simplify-path/discuss/596137/C%2B%2B-stringstream-and-stack-solution)
