@@ -16,4 +16,10 @@ The following contains all the solutions for the problems marked as `String` und
 
 `LC 68`. **Text Justification** - [Problem](https://leetcode.com/problems/text-justification/) [Solution](https://leetcode.com/problems/text-justification/discuss/595979/C%2B%2B-solution-easy-to-understand)
 
-`LC 71.` **Simplify Path** - [Problem](https://leetcode.com/problems/simplify-path/) [Solution](https://leetcode.com/problems/simplify-path/discuss/596137/C%2B%2B-stringstream-and-stack-solution)
+`LC 71`. **Simplify Path** - [Problem](https://leetcode.com/problems/simplify-path/) [Solution](https://leetcode.com/problems/simplify-path/discuss/596137/C%2B%2B-stringstream-and-stack-solution)
+
+`LC 678`. **Valid Parentheses String** - [Problem](https://leetcode.com/problems/valid-parenthesis-string/) [Solution](https://leetcode.com/problems/valid-parenthesis-string/discuss/543521/Java-Count-Open-Parenthesis-O(n)-time-O(1)-space-Picture-Explain)
+
+`LC 1169`. **Invalid Transactions** - [Problem](https://leetcode.com/problems/invalid-transactions/) [Solution](https://leetcode.com/problems/invalid-transactions/discuss/597901/C%2B%2B-solution-using-map)
+
+`LC 1247.` **Minimum Swaps to Make Strings Equal** -[Problem](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/) [Solution](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/discuss/596888/C%2B%2B-easy-to-understand-solution)
