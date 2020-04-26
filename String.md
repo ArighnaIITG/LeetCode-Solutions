@@ -1,6 +1,6 @@
 # STRING
 
-The following contains all the solutions for the problems marked as `String` under the LC tag. The numbering is according to the LC numbering system.
+The following contains all the solutions for the problems marked as `String` under the LC tag. The numbering is according to the LC numbering system. Most of the solutions are my own LeetCode Discuss posts, which I have gathered from top well known solutions. Some solutions are those of top authors, which are very well written.
 
 `LC 20` **Valid Parentheses** - [Problem](https://leetcode.com/problems/valid-parentheses) [Solution](https://leetcode.com/problems/valid-parentheses/discuss/594698/C%2B%2B-2-methods-using-stack)
 
@@ -18,8 +18,12 @@ The following contains all the solutions for the problems marked as `String` und
 
 `LC 71` **Simplify Path** - [Problem](https://leetcode.com/problems/simplify-path/) [Solution](https://leetcode.com/problems/simplify-path/discuss/596137/C%2B%2B-stringstream-and-stack-solution)
 
+`LC 556` **Next Greater Element III** - [Problem](https://leetcode.com/problems/next-greater-element-iii/) [Solution](https://leetcode.com/problems/next-greater-element-iii/discuss/598769/C%2B%2B-Logic-of-next_permutation)
+
 `LC 678` **Valid Parentheses String** - [Problem](https://leetcode.com/problems/valid-parenthesis-string/) [Solution](https://leetcode.com/problems/valid-parenthesis-string/discuss/543521/Java-Count-Open-Parenthesis-O(n)-time-O(1)-space-Picture-Explain)
 
 `LC 1169` **Invalid Transactions** - [Problem](https://leetcode.com/problems/invalid-transactions/) [Solution](https://leetcode.com/problems/invalid-transactions/discuss/597901/C%2B%2B-solution-using-map)
+
+`LC 1234` **Replace the Substring for Balanced String** - [Problem](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) [Solution](https://leetcode.com/problems/replace-the-substring-for-balanced-string/discuss/598726/C%2B%2B-solution-similar-to-Minimum-Window-Substring)
 
 `LC 1247` **Minimum Swaps to Make Strings Equal** -[Problem](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/) [Solution](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/discuss/596888/C%2B%2B-easy-to-understand-solution)
