@@ -22,7 +22,11 @@ The following contains all the solutions for the problems marked as `String` und
 
 `LC 678` **Valid Parentheses String** - [Problem](https://leetcode.com/problems/valid-parenthesis-string/) [Solution](https://leetcode.com/problems/valid-parenthesis-string/discuss/543521/Java-Count-Open-Parenthesis-O(n)-time-O(1)-space-Picture-Explain)
 
+`LC 816` **Ambiguous Co-ordinates** - [Problem](https://leetcode.com/problems/ambiguous-coordinates/) [Solution](https://leetcode.com/problems/ambiguous-coordinates/discuss/599950/C%2B%2B-modular-code-with-expanation)
+
 `LC 1169` **Invalid Transactions** - [Problem](https://leetcode.com/problems/invalid-transactions/) [Solution](https://leetcode.com/problems/invalid-transactions/discuss/597901/C%2B%2B-solution-using-map)
+
+`LC 1177` **Can Make Palindrome From Substring** - [Problem](https://leetcode.com/problems/can-make-palindrome-from-substring/) [Solution](https://leetcode.com/problems/can-make-palindrome-from-substring/discuss/600042/C%2B%2B-3-solution-(Prefix-count-Prefix-xor-and-xor-of-frequencies))
 
 `LC 1234` **Replace the Substring for Balanced String** - [Problem](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) [Solution](https://leetcode.com/problems/replace-the-substring-for-balanced-string/discuss/598726/C%2B%2B-solution-similar-to-Minimum-Window-Substring)
 
