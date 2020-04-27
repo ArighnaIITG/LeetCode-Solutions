@@ -18,6 +18,8 @@ The following contains all the solutions for the problems marked as `String` und
 
 `LC 71` **Simplify Path** - [Problem](https://leetcode.com/problems/simplify-path/) [Solution](https://leetcode.com/problems/simplify-path/discuss/596137/C%2B%2B-stringstream-and-stack-solution)
 
+`LC 227` **Basic Calculator II** - [Problem](https://leetcode.com/problems/basic-calculator-ii/) [Solution](https://leetcode.com/problems/basic-calculator-ii/discuss/63006/C%2B%2B-stack-solution.)
+
 `LC 556` **Next Greater Element III** - [Problem](https://leetcode.com/problems/next-greater-element-iii/) [Solution](https://leetcode.com/problems/next-greater-element-iii/discuss/598769/C%2B%2B-Logic-of-next_permutation)
 
 `LC 678` **Valid Parentheses String** - [Problem](https://leetcode.com/problems/valid-parenthesis-string/) [Solution](https://leetcode.com/problems/valid-parenthesis-string/discuss/543521/Java-Count-Open-Parenthesis-O(n)-time-O(1)-space-Picture-Explain)
