@@ -33,3 +33,5 @@ The following contains all the solutions for the problems marked as `String` und
 `LC 1234` **Replace the Substring for Balanced String** - [Problem](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) [Solution](https://leetcode.com/problems/replace-the-substring-for-balanced-string/discuss/598726/C%2B%2B-solution-similar-to-Minimum-Window-Substring)
 
 `LC 1247` **Minimum Swaps to Make Strings Equal** -[Problem](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/) [Solution](https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/discuss/596888/C%2B%2B-easy-to-understand-solution)
+
+`LC 1328`. **Break a Palindrome** - [Problem](https://leetcode.com/problems/break-a-palindrome/) [Solution](https://leetcode.com/problems/break-a-palindrome/discuss/489774/JavaC%2B%2BPython-Easy-and-Concise)
