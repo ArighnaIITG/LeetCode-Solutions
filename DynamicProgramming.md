@@ -3,7 +3,6 @@
 Given a string s, return the longest palindromic substring in s.
 
 Example 1:
-
 ```
 Input: s = "babad"
 Output: "bab"
@@ -11,7 +10,6 @@ Explanation: "aba" is also a valid answer.
 ```
 
 Example 2:
-
 ```
 Input: s = "cbbd"
 Output: "bb"
@@ -166,14 +164,12 @@ public:
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 
 Example 1:
-
 ```
 Input: n = 3
 Output: ["((()))","(()())","(())()","()(())","()()()"]
 ```
 
 Example 2:
-
 ```
 Input: n = 1
 Output: ["()"]
@@ -259,3 +255,147 @@ vector<string> generateParenthesis(int n) {
 
 Time Complexity - `O(n^4)`.
 Space Complexity - `O(n^2)`.
+
+## Longest Valid Parentheses
+
+Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses 
+substring.
+
+Example 1:
+```
+Input: s = "(()"
+Output: 2
+Explanation: The longest valid parentheses substring is "()".
+```
+
+Example 2:
+```
+Input: s = ")()())"
+Output: 4
+Explanation: The longest valid parentheses substring is "()()".
+```
+
+Example 3:
+```
+Input: s = ""
+Output: 0
+```
+
+### Solution:
+
+**Dynamic Programming solution** -
+
+```
+class Solution {
+public:
+    int longestValidParentheses(string s) {
+        int n = s.length(), ma = 0;
+        vector<int> dp(n+1, 0);
+
+        for(int i=1;i<n;i++){
+            if(s[i]==')'){
+                if (s[i-1]=='('){
+                    dp[i+1]=dp[i-1]+2;
+                }
+                else{
+                    if((i-dp[i])>=1 && s[i-1-dp[i]]=='('){
+                        dp[i+1]=dp[i]+dp[max(0,i-dp[i]-1)]+2;
+                    }
+                }
+            }
+            ma=max(ma,dp[i+1]);
+        }
+
+        for (auto a:dp) cout << a << " ";
+        return ma;
+    }
+};
+```
+
+**Stack Solution** -
+
+The workflow of the solution is as below.
+
+- Scan the string from beginning to end.
+- If current character is `'('`, push its index to the stack. If current character is `')'` and the character at the index of the top of stack is `'('`, we just find a matching pair so pop from the stack. Otherwise, we push the index of `')'` to the stack.
+- After the scan is done, the stack will only contain the indices of characters which cannot be matched. Then let's use the opposite side - substring between adjacent indices should be valid parentheses.
+- If the stack is empty, the whole input string is valid. Otherwise, we can scan the stack to get longest valid substring as described in step 3.
+
+```
+class Solution {
+public:
+    int longestValidParentheses(string s) {
+        int n = s.length(), longest = 0;
+        stack<int> st;
+        for (int i = 0; i < n; i++) {
+            if (s[i] == '(') st.push(i);
+            else {
+                if (!st.empty()) {
+                    if (s[st.top()] == '(') st.pop();
+                    else st.push(i);
+                }
+                else st.push(i);
+            }
+        }
+        if (st.empty()) longest = n;
+        else {
+            int a = n, b = 0;
+            while (!st.empty()) {
+                b = st.top(); st.pop();
+                longest = max(longest, a-b-1);
+                a = b;
+            }
+            longest = max(longest, a);
+        }
+        return longest;
+    }
+};
+```
+
+## Trapping Rain Water:
+
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+
+Example 1:
+```
+Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
+Output: 6
+```
+
+Example 2:
+```
+Input: height = [4,2,0,3,2,5]
+Output: 9
+```
+
+Constraints:
+```
+n == height.length
+1 <= n <= 2 * 104
+0 <= height[i] <= 105
+```
+
+### Solution:
+
+```
+class Solution {
+public:
+    int trap(vector<int>& height) {
+        int n = height.size(), tot = 0, right=height[n-1];
+        vector<int> left(n, 0);
+        
+        for(int i=0;i<n;i++){
+            if(!i) left[i]=height[i];
+            else left[i]=max(left[i-1], height[i]);
+        }
+        
+        tot+=min(left[n-1],right)-height[n-1];
+        for(int i=n-2;i>=0;i--){
+            right=max(right, height[i]);
+            tot+=min(left[i],right)-height[i];
+        }
+
+        return tot;
+    }
+};
+```
